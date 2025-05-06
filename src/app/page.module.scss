@@ -1,0 +1,25 @@
+@use "../scss/variables" as v;
+@use "../scss/mixins" as mx;
+@use "../scss/placeholders";
+
+.container {
+  position: relative;
+  @include mx.column-fs-cr(200px);
+  min-width: 320px;
+  max-width: 1600px;
+  width: 100%;
+
+  background-image: url("/main-mobile.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  @include mx.mq("md") {
+    background-image: url("/main-deck.webp");
+  }
+}
+
+.box {
+  @include mx.column-fs-cr(160px);
+  width: 100%;
+}

@@ -1,0 +1,14 @@
+@use "variables" as v;
+
+%nunito-title {
+  font-family: v.$main-font;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.2;
+}
+%nunito-text {
+  font-family: v.$main-font;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.2;
+}

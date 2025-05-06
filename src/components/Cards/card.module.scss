@@ -1,0 +1,167 @@
+@use "@/scss/variables" as v;
+@use "@/scss/mixins" as mx;
+@use "@/scss/placeholders";
+
+.wrapCard {
+  @include mx.bg-box(0, auto);
+  padding: 20px 0;
+  @include mx.mq("md") {
+    padding: 40px 0;
+  }
+  //   @include mx.mq("lg") {
+  //     padding: 60px 0;
+  //   }
+}
+
+.docCard {
+  @include mx.column-fs-cr(20px);
+  box-sizing: border-box;
+  min-width: 300px;
+  max-width: 1200px;
+  width: 96%;
+  //   height: 640px;
+  //   border-radius: 16px;
+  //   border: 2px solid v.$brend;
+  background-size: cover;
+  background-position: bottom;
+  padding: 20px;
+
+  @include mx.mq("md") {
+    width: 80%;
+    // border-radius: 20px;
+    padding: 20px 40px 40px 40px;
+    //   @include mx.row-fs-cr(20px);
+  }
+  @include mx.mq("lg") {
+    @include mx.row-fs-cr(60px);
+    width: 90%;
+    // border-radius: 24px;
+    padding: 40px 60px;
+  }
+  //   @include mx.mq("xl") {
+  //     max-width: 1280px;
+  //     height: 600px;
+  //   }
+}
+.bgRight {
+  background-image: url("/card-mob-left.webp");
+  @include mx.mq("md") {
+    background-image: url("/card-two-right.webp");
+  }
+}
+.bgLeft {
+  background-image: url("/card-one-left.webp");
+}
+
+.imgDoc {
+  display: block;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  object-fit: cover;
+  @include mx.mq("md") {
+    width: 460px;
+    height: 460px;
+  }
+  @include mx.mq("lg") {
+    width: 360px;
+    height: 360px;
+  }
+  @include mx.mq("xl") {
+    width: 480px;
+    height: 480px;
+  }
+}
+
+.wrapInfo {
+  @include mx.column-fs-cr(20px);
+  width: 100%;
+  @include mx.mq("md") {
+    gap: 40px;
+    // @include mx.column-sb-fs;
+  }
+  @include mx.mq("lg") {
+    gap: 60px;
+    // @include mx.column-sb-fs;
+  }
+}
+
+.infoDoc {
+  @include mx.column-fs-fs(4px);
+  width: 100%;
+  h3 {
+    @include mx.row-fs-cr(0);
+    font-family: var(--font-nunito);
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    color: rgb(39, 55, 21);
+    margin: 0;
+  }
+  p {
+    font-family: var(--font-nunito);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: rgb(29, 42, 15);
+    margin: 0;
+  }
+  @include mx.mq("md") {
+    h3 {
+      font-size: 22px;
+      //   line-height: 1.5;
+    }
+    p {
+      font-size: 18px;
+      //   line-height: 1.5;
+    }
+  }
+  @include mx.mq("lg") {
+    width: 100%;
+    h3 {
+      font-size: 28px;
+      line-height: 1.5;
+    }
+    p {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+  @include mx.mq("xl") {
+    h3 {
+      font-size: 36px;
+      //   line-height: 1.5;
+    }
+    p {
+      font-size: 24px;
+      //   line-height: 1.5;
+    }
+  }
+}
+
+.wrapBtn {
+  @include mx.row-cr-cr(0);
+  width: 100%;
+}
+
+.btnDoc {
+  @include mx.row-cr-cr(0);
+  min-width: 260px;
+  max-width: 420px;
+  width: 100%;
+  font-family: var(--font-nunito);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  width: 100%;
+  height: 48px;
+  border: none;
+
+  border-radius: 12px;
+  background-color: v.$brend;
+  color: v.$hero-text;
+  //   @include mx.mq("md") {
+  //     height: 60px;
+  //   }
+}

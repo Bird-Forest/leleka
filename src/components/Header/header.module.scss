@@ -1,0 +1,48 @@
+@use "@/scss/variables" as v;
+@use "@/scss/mixins" as mx;
+@use "@/scss/placeholders";
+
+.top {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  @include mx.bg-box(0, 70px);
+}
+.topImg {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+.topCase {
+  @include mx.row-fs-cr(10px);
+  min-width: 320px;
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 10px;
+  p,
+  span {
+    font-family: var(--font-nunito);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: rgb(112, 204, 17);
+    color: rgb(46, 63, 26);
+  }
+}
+.topTablet {
+  display: none;
+  @include mx.mq("lg") {
+    @include mx.row-fs-cr(10px);
+    a {
+      font-family: var(--font-nunito);
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.5;
+      letter-spacing: 0.03em;
+      color: rgb(46, 63, 26);
+      text-decoration: none;
+    }
+  }
+}

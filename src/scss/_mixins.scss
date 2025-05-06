@@ -1,0 +1,72 @@
+@use "sass:map";
+@use "sass:list";
+@use "variables" as v;
+@use "placeholders";
+
+@mixin mq($bp: sm, $type: min, $is-retina: false) {
+  @if map.has-key(v.$breacpoints, $bp) {
+    $width: map.get(v.$breacpoints, $bp);
+
+    @if $type == max {
+      $width: $width - 0.02px;
+    }
+
+    @media only screen and (#{$type}-width: $width) {
+      @if $is-retina {
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          @content;
+        }
+      } @else {
+        @content;
+      }
+    }
+  } @else {
+    @error "";
+  }
+}
+
+@mixin column-fs-fs($gap) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: $gap;
+}
+
+@mixin column-fs-cr($gap) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin row-fs-cr($gap) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin row-cr-cr($gap) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin bg-box($gap, $height) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+  width: 100%;
+  height: $height;
+  backdrop-filter: blur(8px);
+  background-color: rgba(186, 186, 186, 0.8);
+}
