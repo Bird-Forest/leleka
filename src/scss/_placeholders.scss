@@ -1,14 +1,48 @@
 @use "variables" as v;
 
-%nunito-title {
+%hero-h1 {
   font-family: v.$main-font;
-  font-weight: 700;
+  font-weight: 800;
   font-style: normal;
   line-height: 1.2;
+  text-align: center;
+  color: v.$title;
 }
-%nunito-text {
+%hero-h2 {
   font-family: v.$main-font;
   font-weight: 600;
-  font-style: normal;
-  line-height: 1.2;
+  font-style: italic;
+  text-align: center;
+  color: v.$light-text;
+}
+%hero-h4 {
+  font-family: v.$main-font;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.5;
+  color: v.$accent;
+}
+%hero-p {
+  font-family: v.$main-font;
+  font-weight: 600;
+  line-height: 1.5;
+  color: v.$light-text;
+}
+%card-h3 {
+  font-family: v.$main-font;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  color: v.$brend;
+}
+%card-p {
+  font-family: v.$main-font;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: v.$dark-text;
+}
+%header-text {
+  font-family: v.$main-font;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
 }

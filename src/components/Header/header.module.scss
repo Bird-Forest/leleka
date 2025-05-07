@@ -11,24 +11,30 @@
 }
 .topImg {
   display: block;
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
+  margin: 0 40px 0 20px;
+  @include mx.mq("lg") {
+    margin: 0 100px 0 20px;
+  }
 }
 .topCase {
   @include mx.row-fs-cr(10px);
   min-width: 320px;
   max-width: 1280px;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 20px;
   p,
   span {
-    font-family: var(--font-nunito);
+    @extend %header-text;
     font-size: 24px;
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    color: rgb(112, 204, 17);
-    color: rgb(46, 63, 26);
+    color: v.$light-text;
+  }
+  @include mx.mq("md") {
+    padding: 0 20px;
   }
 }
 .topTablet {
@@ -36,12 +42,11 @@
   @include mx.mq("lg") {
     @include mx.row-fs-cr(10px);
     a {
-      font-family: var(--font-nunito);
       font-size: 28px;
       font-weight: 700;
       line-height: 1.5;
       letter-spacing: 0.03em;
-      color: rgb(46, 63, 26);
+      color: v.$gray;
       text-decoration: none;
     }
   }

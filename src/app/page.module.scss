@@ -2,6 +2,11 @@
 @use "../scss/mixins" as mx;
 @use "../scss/placeholders";
 
+.wrapper {
+  @include mx.body();
+  background-color: v.$light-text;
+}
+
 .container {
   position: relative;
   @include mx.column-fs-cr(200px);

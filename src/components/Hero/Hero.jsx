@@ -1,7 +1,6 @@
 import React from "react";
 import cl from "./hero.module.scss";
 import Image from "next/image";
-// import heroMobile from "../../../public/hero-mobile.webp";
 import heroDoc from "../../../public/hero-doc.webp";
 
 export default function Hero() {

@@ -6,12 +6,11 @@ import man from "../../../public/man.jpg";
 export default function DoctorGorohov() {
   return (
     <div className={cl.wrapCard}>
-      <div className={`${cl.docCard} ${cl.bgRight}`}>
-        <Image
-          src={man}
-          alt="Горохов Володимир Вікторович"
-          className={cl.imgDoc}
-        />
+      <div className={`${cl.docCardRight} ${cl.bgRight}`}>
+        <div className={cl.wrapImgDoc}>
+          <Image src={man} alt="Горохов Володимир Вікторович" />
+        </div>
+
         <div className={cl.wrapInfo}>
           <div className={cl.infoDoc}>
             <p>лікар сімейної медицини</p>
@@ -22,7 +21,14 @@ export default function DoctorGorohov() {
             </p>
           </div>
           <div className={cl.wrapBtn}>
-            <button className={cl.btnDoc}>Записатися на прийом</button>
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cl.btnDoc}
+            >
+              Записатися на прийом
+            </a>
           </div>
         </div>
       </div>

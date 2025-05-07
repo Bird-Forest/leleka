@@ -30,7 +30,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="uk">
-      <body className={nunito.variable}>
+      <body className={`${nunito.variable} ${cl.wrapper}`}>
         <Header />
         <main className={cl.container}>{children}</main>
       </body>
