@@ -84,14 +84,16 @@
   gap: $gap;
 }
 
-@mixin bg-box($gap, $height) {
+@mixin bg-box($gap) {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: $gap;
+  min-width: 100vw;
+  max-width: 1600px;
   width: 100%;
-  height: $height;
+  // height: $height;
   backdrop-filter: blur(8px);
   background-color: rgba(186, 186, 186, 0.8);
 }

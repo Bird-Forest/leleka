@@ -3,7 +3,9 @@
 @use "@/scss/placeholders";
 
 .wrapCard {
-  @include mx.bg-box(0, auto);
+  position: relative;
+  @include mx.bg-box(0);
+  height: auto;
   padding: 20px 0;
   @include mx.mq("md") {
     padding: 40px;
@@ -15,15 +17,16 @@
   min-width: 300px;
   max-width: 420px;
   width: 100%;
+  height: auto;
   background-size: cover;
   background-position: center;
-
   margin: 0 10px;
   padding: 10px 10px 28px 10px;
 
   @include mx.mq("md") {
     min-width: 420px;
     max-width: 540px;
+    // margin: 0 20px;
 
     padding: 20px 20px 40px 20px;
   }
@@ -49,9 +52,9 @@
   min-width: 300px;
   max-width: 420px;
   width: 100%;
+  height: auto;
   background-size: cover;
   background-position: center;
-
   margin: 0 10px;
   padding: 10px 10px 28px 10px;
   @include mx.mq("md") {
@@ -103,6 +106,7 @@
 .wrapInfo {
   @include mx.column-fs-cr(20px);
   width: 100%;
+  height: auto;
 
   @include mx.mq("lg") {
     gap: 60px;
@@ -112,6 +116,7 @@
 .infoDoc {
   @include mx.column-fs-fs(4px);
   width: 100%;
+  height: auto;
   h3 {
     @include mx.row-fs-cr(0);
     @extend %card-h3;
