@@ -9,11 +9,65 @@
   background-color: v.$gray;
 }
 .bottomCase {
-  @include mx.column-fs-fs(10px);
-  p,
-  a {
+  @include mx.column-fs-cr(10px);
+  width: 100%;
+  padding: 20px 10px 10px 10px;
+  p {
     @extend %hero-p;
+    font-size: 14px;
+  }
+}
+.wrapInfo {
+  @include mx.column-fs-cr(10px);
+  width: 100%;
+  @include mx.mq("xl") {
+    @include mx.row-cr-cr(20px);
+  }
+}
+.contacts {
+  @include mx.column-fs-cr(10px);
+  width: auto;
+  @include mx.mq("lg") {
+    @include mx.row-cr-cr(20px);
+  }
+}
+.wrapLinks {
+  @include mx.row-cr-cr(20px);
+  width: auto;
+  height: auto;
+
+  .linkTel {
+    @extend %hero-p;
+    width: auto;
     font-size: 16px;
     text-decoration: none;
+    color: v.$accent;
+    @include mx.mq("md") {
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+  .linkIcon {
+    @include mx.row-cr-cr(0);
+    width: 36px;
+    height: 36px;
+    img {
+      display: block;
+      width: 36px;
+      height: 36px;
+      object-fit: cover;
+    }
+  }
+}
+.wrapAddress {
+  @include mx.column-fs-cr(1px);
+  width: auto;
+  p {
+    @extend %hero-p;
+    font-size: 16px;
+  }
+  @include mx.mq("md") {
+    @include mx.row-fs-cr(10px);
   }
 }

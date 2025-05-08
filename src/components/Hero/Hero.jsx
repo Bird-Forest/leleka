@@ -2,11 +2,12 @@ import React from "react";
 import cl from "./hero.module.scss";
 import Image from "next/image";
 import heroDoc from "../../../public/hero-doc.webp";
+import PatientRoom from "../Cabinet/PatientRoom";
 
 export default function Hero() {
   return (
     <div className={cl.hero}>
-      <Image src={heroDoc} alt="Лікар оберігає пацієнтів" />
+      <Image src={heroDoc} alt="Лікар оберігає пацієнтів" priority />
       <div className={cl.caseHero}>
         <div className={cl.caseTitle}>
           <h1>Медичний центр "Лелека"</h1>
@@ -36,6 +37,7 @@ export default function Hero() {
               в медичному центрі.
             </p>
           </article>
+          <PatientRoom />
         </div>
       </div>
     </div>
