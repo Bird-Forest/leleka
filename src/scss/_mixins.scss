@@ -56,6 +56,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  box-sizing: border-box;
   gap: $gap;
 }
 
@@ -64,6 +65,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  box-sizing: border-box;
   gap: $gap;
   margin: 0;
 }
@@ -73,6 +75,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  box-sizing: border-box;
   gap: $gap;
 }
 
@@ -81,25 +84,72 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   gap: $gap;
 }
 
-@mixin bg-box($gap) {
+@mixin img-main($property) {
+  position: relative;
+  display: $property;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+@mixin bg-card($height) {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: $gap;
-  min-width: 100vw;
-  max-width: 1600px;
-  width: 100%;
-  height: auto;
+  // gap: $gap;
+  // box-sizing: border-box;
+  min-width: 320px;
+  // max-width: 1600px;
+  width: 100vw;
+  height: $height;
   backdrop-filter: blur(8px);
   background-color: rgba(186, 186, 186, 0.8);
-  // margin-bottom: 160px;
 }
 
-@mixin img-box($width) {
+@mixin bg-img-card($min, $max) {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: $min;
+  max-width: $max;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  margin: 0 10px;
+}
+
+// @mixin bg-box($gap) {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+//   align-items: center;
+//   gap: $gap;
+//   box-sizing: border-box;
+//   min-width: 100vw;
+//   max-width: 1600px;
+//   width: 100%;
+//   height: auto;
+//   backdrop-filter: blur(8px);
+//   background-color: rgba(186, 186, 186, 0.8);
+//   // margin-bottom: 160px;
+// }
+
+@mixin photo-doc($width) {
   position: relative;
   display: flex;
   align-items: center;
@@ -115,6 +165,8 @@
   box-sizing: border-box;
   min-width: 300px;
   max-width: 1000px;
+  width: 100%;
+  height: auto;
   gap: $gap;
   margin: 0;
 }

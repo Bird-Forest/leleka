@@ -6,7 +6,9 @@ import doctor from "../../../public/doctor.png";
 export default function PatientRoom() {
   return (
     <div className={cl.wrapPatient}>
-      <Image src={doctor} alt="Особистий кабінет пацієнта" />
+      <div className={cl.patientIcon}>
+        <Image src={doctor} alt="Особистий кабінет пацієнта" />
+      </div>
       <a>Особистий кабінет пацієнта</a>
     </div>
   );

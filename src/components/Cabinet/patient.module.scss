@@ -6,11 +6,21 @@
   @include mx.row-fs-cr(8px);
   width: auto;
   height: 40px;
-  img {
-    display: block;
+  .patientIcon {
+    @include mx.row-cr-cr(0);
+    position: relative;
     width: 40px;
     height: 40px;
+
+    img {
+      display: block;
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      filter: none;
+    }
   }
+
   a {
     @include mx.row-fs-cr(0);
     width: auto;
