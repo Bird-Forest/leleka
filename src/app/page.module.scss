@@ -16,18 +16,21 @@
   // gap: 160px;
   // height: 100vh;
   background-image: url("/main-mobile.webp");
-  aspect-ratio: 1 / 1.5;
+  // aspect-ratio: 1 / 1.5;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   @include mx.mq("md") {
     background-image: url("/main-deck.webp");
-    aspect-ratio: 1 / 0.67;
+    // aspect-ratio: 1 / 0.67;
   }
 }
 
 .box {
+  // position: absolute;
   @include mx.column-fs-cr(160px);
   width: 100%;
+  // height: auto;
+  // background-color: rgba(#ffffff, 0);
 }
