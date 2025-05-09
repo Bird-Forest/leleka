@@ -1,0 +1,42 @@
+@use "@/scss/variables" as v;
+@use "@/scss/mixins" as mx;
+@use "@/scss/placeholders";
+
+.container {
+  position: fixed;
+  z-index: 1;
+  @include mx.column-fs-cr(0);
+  min-width: 320px;
+  max-width: 1600px;
+  width: 100%;
+  // gap: 160px;
+  height: 100vh;
+  overflow-y: auto;
+  // background-image: url("/main-mobile.webp");
+  // aspect-ratio: 1 / 1.5;
+  //   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // @include mx.mq("md") {
+  //   background-image: url("/main-deck.webp");
+  //   // aspect-ratio: 1 / 0.67;
+  // }
+  img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    // aspect-ratio: 1 / 0.67;
+    object-fit: cover;
+  }
+}
+.box {
+  position: absolute;
+  //   z-index: 2;
+  @include mx.column-fs-cr(160px);
+  width: 100%;
+  // background-color: transparent;
+  // height: auto;
+  // overflow-y: scroll;
+  // background-color: rgba(#ffffff, 0);
+}

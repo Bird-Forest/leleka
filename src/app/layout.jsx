@@ -4,6 +4,7 @@ import cl from "./page.module.scss";
 import Header from "@/components/Header/Header";
 import { DEFAULT_SEO } from "@/util/seo.config";
 import Loader from "@/components/Helper/Loader";
+import WrapperImg from "@/components/Wrapper/WrapperImg";
 
 export const nunito = Nunito({
   variable: "--font-nunito",
@@ -27,7 +28,9 @@ export default function RootLayout({ children }) {
       <body className={`${nunito.variable} ${cl.wrapper}`}>
         <Suspense fallback={<Loader />}>
           <Header />
-          <main className={cl.container}>{children}</main>
+          {/* <main> */}
+          <WrapperImg>{children}</WrapperImg>
+          {/* </main> */}
         </Suspense>
       </body>
     </html>
