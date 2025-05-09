@@ -8,19 +8,22 @@
 }
 
 .container {
-  position: relative;
+  // position: relative;
   @include mx.column-fs-cr(0);
   min-width: 320px;
   max-width: 1600px;
   width: 100%;
+  // gap: 160px;
   // height: 100vh;
   background-image: url("/main-mobile.webp");
+  aspect-ratio: 1 / 1.5;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   @include mx.mq("md") {
     background-image: url("/main-deck.webp");
+    aspect-ratio: 1 / 0.67;
   }
 }
 
