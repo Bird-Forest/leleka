@@ -4,8 +4,6 @@ import cl from "./page.module.scss";
 import Header from "@/components/Header/Header";
 import { DEFAULT_SEO } from "@/util/seo.config";
 import Loader from "@/components/Helper/Loader";
-// import Image from "next/image";
-// import main from "../../public/main-deck.webp";
 
 export const nunito = Nunito({
   variable: "--font-nunito",
@@ -29,7 +27,6 @@ export default function RootLayout({ children }) {
       <body className={`${nunito.variable} ${cl.wrapper}`}>
         <Suspense fallback={<Loader />}>
           <Header />
-          {/* <Image src={main} alt="Фонове зображення" /> */}
           <main className={cl.container}>{children}</main>
         </Suspense>
       </body>
