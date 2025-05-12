@@ -9,7 +9,13 @@ export default function PatientRoom() {
       <div className={cl.patientIcon}>
         <Image src={doctor} alt="Особистий кабінет пацієнта" />
       </div>
-      <a>Особистий кабінет пацієнта</a>
+      <a
+        href="https://medportal.ua/#/?misCode=LEL"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Особистий кабінет пацієнта
+      </a>
     </div>
   );
 }

@@ -18,7 +18,7 @@ export default function DoctorCard({ item }) {
             </div>
             <div className={cl.wrapBtn}>
               <a
-                href=""
+                href="https://medportal.ua/#/?misCode=LEL"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cl.btnDoc}

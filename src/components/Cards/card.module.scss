@@ -55,75 +55,6 @@
   }
 }
 
-// .docCardRight {
-//   @include mx.card(10px, column);
-//   min-width: 300px;
-//   max-width: 420px;
-//   width: 100%;
-//   height: auto;
-//   background-size: cover;
-//   background-position: center;
-//   margin: 0 10px;
-//   padding: 10px 10px 28px 10px;
-
-//   @include mx.mq("md") {
-//     min-width: 420px;
-//     max-width: 540px;
-//     // margin: 0 20px;
-
-//     padding: 20px 20px 40px 20px;
-//   }
-//   @include mx.mq("lg") {
-//     @include mx.card(60px, row);
-//     min-width: 540px;
-//     max-width: 1000px;
-
-//     padding: 40px;
-//   }
-// }
-// .bgRight {
-//   background-image: url("/daisy-v-r.webp");
-//   aspect-ratio: 1 / 1.3;
-//   @include mx.mq("lg") {
-//     aspect-ratio: 1 / 0.5;
-//     background-image: url("/daisy-h-r.webp");
-//   }
-// }
-
-// .docCardLeft {
-//   @include mx.card(10px, column);
-//   min-width: 300px;
-//   max-width: 420px;
-//   width: 100%;
-//   height: auto;
-//   background-size: cover;
-//   background-position: center;
-//   margin: 0 10px;
-//   padding: 10px 10px 28px 10px;
-//   @include mx.mq("md") {
-//     min-width: 420px;
-//     max-width: 540px;
-
-//     padding: 20px 20px 40px 20px;
-//   }
-//   @include mx.mq("lg") {
-//     @include mx.card(60px, row-reverse);
-
-//     min-width: 540px;
-//     max-width: 1000px;
-
-//     padding: 40px;
-//   }
-// }
-// .bgLeft {
-//   background-image: url("/daisy-v-l.webp");
-//   aspect-ratio: 1 / 1.3;
-//   @include mx.mq("lg") {
-//     aspect-ratio: 1 / 0.5;
-//     background-image: url("/daisy-h-l.webp");
-//   }
-// }
-
 .sideRight {
   @include mx.card(10px, column);
   @include mx.mq("lg") {
@@ -162,10 +93,6 @@
 
 .wrapInfoDoc {
   @include mx.column-fs-cr(20px);
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
-  // align-items: center;
   width: 100%;
   height: 100%;
 

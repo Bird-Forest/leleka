@@ -26,7 +26,8 @@
     width: auto;
     height: 40px;
     @extend %hero-h4;
-    font-size: 16px;
+    font-size: 18px;
+    text-decoration: none;
     cursor: pointer;
     &:hover,
     &:focus {

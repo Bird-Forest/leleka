@@ -1,5 +1,6 @@
 import man from "../../../public/man.jpg";
 import women from "../../../public/women.jpg";
+import poboinya from "../../../public/poboinya.png";
 // import bgRightV from "../../../public/daisy-v-r.webp";
 // import bgRightH from "../../../public/daisy-h-r.webp";
 // import bgLeftV from "../../../public/daisy-v-l.webp";
@@ -18,7 +19,7 @@ export const doctors = [
   },
   {
     id: 2,
-    photo: women,
+    photo: poboinya,
     specialist: "лікар сімейної медицини",
     name: "Побойня Олена Анатоліївна",
     description:

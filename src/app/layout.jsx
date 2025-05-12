@@ -28,9 +28,7 @@ export default function RootLayout({ children }) {
       <body className={`${nunito.variable} ${cl.wrapper}`}>
         <Suspense fallback={<Loader />}>
           <Header />
-          {/* <main> */}
           <WrapperImg>{children}</WrapperImg>
-          {/* </main> */}
         </Suspense>
       </body>
     </html>

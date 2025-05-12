@@ -24,6 +24,27 @@
     @include mx.row-cr-cr(20px);
   }
 }
+.reception {
+  @include mx.column-fs-cr(8px);
+  width: 100%;
+  h4 {
+    @extend %hero-h4;
+    font-size: 20px;
+    // width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  p {
+    @extend %hero-p;
+    font-size: 18px;
+    // width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  @include mx.mq("lg") {
+    @include mx.row-cr-cr(20px);
+  }
+}
 .contacts {
   @include mx.column-fs-cr(10px);
   width: auto;
