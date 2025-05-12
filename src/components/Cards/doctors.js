@@ -1,17 +1,11 @@
-import man from "../../../public/man.jpg";
-import women from "../../../public/women.jpg";
-import poboinya from "../../../public/poboinya.png";
-// import bgRightV from "../../../public/daisy-v-r.webp";
-// import bgRightH from "../../../public/daisy-h-r.webp";
-// import bgLeftV from "../../../public/daisy-v-l.webp";
-// import bgLeftH from "../../../public/daisy-h-l.webp";
-
-// console.log(bgRightV);
+import poboinya from "../../../public/poboinya.webp";
+import gorohov from "../../../public/gorohov.webp";
+import kozereva from "../../../public/kozereva.webp";
 
 export const doctors = [
   {
     id: 1,
-    photo: man,
+    photo: gorohov,
     specialist: "лікар сімейної медицини",
     name: "Горохов Володимир Вікторович",
     description:
@@ -27,7 +21,7 @@ export const doctors = [
   },
   {
     id: 3,
-    photo: women,
+    photo: kozereva,
     specialist: "лікар ультразвукової діагностики",
     name: "Козирева Оксана Вікторівна",
     description:
