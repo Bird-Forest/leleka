@@ -19,10 +19,8 @@
 
 .bgImgRight {
   @include mx.bg-img-card(300px, 420px);
-  // background-image: url("/daisy-v-l.webp");
-  // background-image: url("/bg-v-l.webp");
-  background-color: #e5e5e6;
-  background-image: url("/retush-v-r.webp");
+
+  background-image: url("/bgr-v-r.webp");
   aspect-ratio: 1 / 1.3;
   padding: 10px 10px 28px 10px;
 
@@ -33,9 +31,7 @@
 
   @include mx.mq("lg") {
     @include mx.bg-img-card(540px, 1000px);
-    // background-image: url("/daisy-h-l.webp");
-    // background-image: url("/bg-h-l.webp");
-    background-image: url("/retush-h-r.webp");
+    background-image: url("/bgr-h-r.webp");
 
     aspect-ratio: 1 / 0.5;
     padding: 40px;
@@ -44,8 +40,8 @@
 
 .bgImgLeft {
   @include mx.bg-img-card(300px, 420px);
-  // background-image: url("/daisy-v-r.webp");
-  background-image: url("/retush-v-l.webp");
+
+  background-image: url("/bgr-v-l.webp");
   aspect-ratio: 1 / 1.3;
   padding: 10px 10px 28px 10px;
 
@@ -56,8 +52,7 @@
 
   @include mx.mq("lg") {
     @include mx.bg-img-card(540px, 1000px);
-    // background-image: url("/daisy-h-r.webp");
-    background-image: url("/retush-h-l.webp");
+    background-image: url("/bgr-h-l.webp");
     aspect-ratio: 1 / 0.5;
     padding: 40px;
   }
@@ -115,6 +110,7 @@
   height: auto;
   h3 {
     @include mx.row-fs-cr(0);
+    width: 90%;
     @extend %card-h3;
     font-size: 20px;
   }
@@ -124,6 +120,7 @@
   }
   @include mx.mq("md") {
     h3 {
+      width: 100%;
       font-size: 24px;
     }
     p {
@@ -133,6 +130,7 @@
   @include mx.mq("lg") {
     width: 100%;
     h3 {
+      width: 90%;
       font-size: 28px;
       line-height: 1.5;
     }
