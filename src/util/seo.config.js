@@ -16,7 +16,7 @@ export const DEFAULT_SEO = {
     type: "website",
     images: [
       {
-        url: "https://leleka.vercel.app/public/family.png",
+        url: "https://leleka.vercel.app/public/family.webp",
         alt: 'Медичний центр "Лелека" в місті Калинівка - це сімейна медицина з турботою про вас і ваших близьких',
       },
     ],
