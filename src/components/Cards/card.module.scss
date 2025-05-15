@@ -21,7 +21,8 @@
   @include mx.bg-img-card(300px, 420px);
   // background-image: url("/daisy-v-l.webp");
   // background-image: url("/bg-v-l.webp");
-  background-image: url("/daisy-v.jpeg");
+  background-color: #e5e5e6;
+  // background-image: url("/daisy-v.jpeg");
   aspect-ratio: 1 / 1.3;
   padding: 10px 10px 28px 10px;
 
@@ -34,7 +35,7 @@
     @include mx.bg-img-card(540px, 1000px);
     // background-image: url("/daisy-h-l.webp");
     // background-image: url("/bg-h-l.webp");
-    background-image: url("/daisy-h.jpeg");
+    background-image: url("/daisy-h-r.jpg");
 
     aspect-ratio: 1 / 0.5;
     padding: 40px;
