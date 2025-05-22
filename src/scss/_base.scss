@@ -10,7 +10,6 @@ body {
   overflow-x: hidden;
   font-family: v.$main-font, sans-serif;
   @extend %main-text;
-  // font-family: var(--font-nunito);
   padding: 0;
   margin: 0;
 }
