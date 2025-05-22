@@ -6,7 +6,6 @@ import telegram from "../../../public/telegram.png";
 import PatientRoom from "../Cabinet/PatientRoom";
 
 export default function Footer() {
-  // const copyrightSymbol = "©";
   const copyrightSymbol = "\u00A9";
 
   return (

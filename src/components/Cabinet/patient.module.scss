@@ -26,7 +26,7 @@
     width: auto;
     height: 40px;
     @extend %hero-h4;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
     cursor: pointer;
     &:hover,
@@ -35,6 +35,11 @@
     }
   }
   @include mx.mq("md") {
+    a {
+      font-size: 18px;
+    }
+  }
+  @include mx.mq("lg") {
     a {
       font-size: 20px;
     }

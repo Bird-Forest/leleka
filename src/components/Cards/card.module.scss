@@ -20,7 +20,7 @@
 .bgImgRight {
   @include mx.bg-img-card(300px, 420px);
 
-  background-image: url("/bgr-v-r.webp");
+  background-image: url("/daisy-v-r.webp");
   aspect-ratio: 1 / 1.3;
   padding: 10px 10px 28px 10px;
 
@@ -31,7 +31,7 @@
 
   @include mx.mq("lg") {
     @include mx.bg-img-card(540px, 1000px);
-    background-image: url("/bgr-h-r.webp");
+    background-image: url("/daisy-h-r.webp");
 
     aspect-ratio: 1 / 0.5;
     padding: 40px;
@@ -41,7 +41,7 @@
 .bgImgLeft {
   @include mx.bg-img-card(300px, 420px);
 
-  background-image: url("/bgr-v-l.webp");
+  background-image: url("/daisy-v-l.webp");
   aspect-ratio: 1 / 1.3;
   padding: 10px 10px 28px 10px;
 
@@ -52,7 +52,7 @@
 
   @include mx.mq("lg") {
     @include mx.bg-img-card(540px, 1000px);
-    background-image: url("/bgr-h-l.webp");
+    background-image: url("/daisy-h-l.webp");
     aspect-ratio: 1 / 0.5;
     padding: 40px;
   }

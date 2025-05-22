@@ -1,9 +1,9 @@
 import { Nunito } from "next/font/google";
-import React, { Suspense } from "react";
+// import React, { Suspense } from "react";
 import cl from "./page.module.scss";
 import Header from "@/components/Header/Header";
 import { DEFAULT_SEO } from "@/util/seo.config";
-import Loader from "@/components/Helper/Loader";
+// import Loader from "@/components/Helper/Loader";
 import WrapperImg from "@/components/Wrapper/WrapperImg";
 
 export const nunito = Nunito({
@@ -26,10 +26,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="uk">
       <body className={`${nunito.variable} ${cl.wrapper}`}>
-        <Suspense fallback={<Loader />}>
-          <Header />
-          <WrapperImg>{children}</WrapperImg>
-        </Suspense>
+        {/* <Suspense fallback={<Loader />}> */}
+        <Header />
+        <WrapperImg>{children}</WrapperImg>
+        {/* </Suspense> */}
       </body>
     </html>
   );
