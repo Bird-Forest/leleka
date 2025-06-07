@@ -153,25 +153,6 @@
   width: 100%;
   height: auto;
   .btnDoc {
-    @include mx.row-cr-cr(0);
-    min-width: 260px;
-    max-width: 420px;
-    width: 100%;
-    @extend %hero-p;
-    font-size: 20px;
-    width: 100%;
-    height: 48px;
-    border: none;
-    border-radius: 12px;
-    background-color: v.$brend;
-    text-decoration: none;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-
-    &:hover,
-    &:focus {
-      background-color: v.$title;
-      transform: scale(1.02);
-    }
+    @include mx.main-btn();
   }
 }

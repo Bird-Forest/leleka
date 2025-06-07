@@ -1,0 +1,83 @@
+@use "@/scss/variables" as v;
+@use "@/scss/mixins" as mx;
+@use "@/scss/placeholders";
+
+.wrapRules {
+  @include mx.column-fs-cr(120px);
+  padding: 120px 0;
+}
+
+.wrapCase {
+  @include mx.bg-card(auto);
+  padding: 20px;
+  @include mx.mq("lg") {
+    padding: 40px;
+  }
+}
+
+.article {
+  @include mx.column-fs-fs(8px);
+  min-width: 300px;
+  max-width: 1000px;
+  width: 100%;
+  background-color: v.$light-text;
+  padding: 20px;
+  margin: 0 10px;
+  h3 {
+    @include mx.row-cr-cr(0);
+    width: 100%;
+    @extend %card-h3;
+    text-align: center;
+    font-size: 22px;
+  }
+  h4 {
+    @extend %hero-h4;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .remark {
+    width: 100%;
+    @extend %hero-h2;
+    color: v.$dark-text;
+    line-height: 1.25;
+    text-align: center;
+    font-size: 18px;
+  }
+  p {
+    @extend %hero-p;
+    color: v.$dark-text;
+    font-size: 16px;
+  }
+  @include mx.mq("lg") {
+    padding: 40px;
+    h3 {
+      font-size: 26px;
+    }
+    h4 {
+      font-size: 22px;
+    }
+    .remark {
+      font-size: 22px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+.rulesLink {
+  @include mx.column-fs-cr(20px);
+  min-width: 300px;
+  max-width: 1000px;
+  width: 100%;
+  background-color: v.$light-text;
+  padding: 20px;
+  margin: 0 10px;
+  .link {
+    @include mx.main-btn();
+  }
+  @include mx.mq("lg") {
+    @include mx.row-cr-cr(40px);
+    padding: 40px;
+  }
+}
