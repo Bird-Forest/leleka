@@ -2,14 +2,15 @@ import React from "react";
 import cl from "./header.module.scss";
 import Image from "next/image";
 import logo from "../../../public/logo.webp";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <header className={cl.top}>
       <div className={cl.topCase}>
-        <div className={cl.topImg}>
+        <Link href="/" className={cl.topImg}>
           <Image src={logo} alt="Логотип медичного центру" />
-        </div>
+        </Link>
 
         <p>МЦ "Лелека"</p>
         <div className={cl.topTablet}>
