@@ -1,0 +1,17 @@
+{
+  "name": "Лелека - Калинівка",
+  "short_name": "Лелека",
+  "description": "Медичний центр Лелека в місті Калинівка - це сімейна медицина з турботою про вас і ваших близьких",
+  "lang": "uk-UA",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f3eff5",
+  "theme_color": "#f3eff5",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    }
+  ]
+}
