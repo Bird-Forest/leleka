@@ -29,7 +29,8 @@ export default function Footer() {
                 +38 (067) 394 08 71
               </a>
               <a
-                href="viber://chat?number=%2B380673940871"
+                // href="viber://chat?number=%2B380673940871"
+                href="https://invite.viber.com/?g2=AQBu%2FaznqwKUuE3SMGzwtF7%2Foee%2Fq7mBdImniEv%2BV2GZ4j5qeR%2FbgbsigTd0Mnb%2B"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cl.linkIcon}
@@ -37,7 +38,8 @@ export default function Footer() {
                 <Image src={viber} alt="Посилання на Вайбер" />
               </a>
               <a
-                href="https://t.me/Leleka_Kalynivka"
+                // href="https://t.me/Leleka_Kalynivka"
+                href="https://t.me/leleka_mc"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cl.linkIcon}
