@@ -1,6 +1,7 @@
 import poboinya from "../../../public/poboinya.webp";
 import gorohov from "../../../public/gorohov.webp";
 import kozereva from "../../../public/kozereva.webp";
+import osaulchik from "../../../public/osaulchik.webp";
 
 export const doctors = [
   {
@@ -26,5 +27,13 @@ export const doctors = [
     name: "Козирева Оксана Вікторівна",
     description:
       " Завдяки надзвичайній уважності, ретельному підходу та невпинному навчанню, наш лікар УЗД забезпечує максимально точну діагностику.",
+  },
+  {
+    id: 4,
+    photo: osaulchik,
+    specialist: "лікар кардіолог",
+    name: "Осаульчик Марина Вікторівна",
+    description:
+      "Ваше серце — у надійних руках. Приділяє максимум уваги кожному пацієнту для детального обстеження серцево-судинної системи.",
   },
 ];
