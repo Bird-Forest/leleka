@@ -10,7 +10,8 @@ export default function AboutUs() {
       <div className={cl.bgAbout}>
         <div className={cl.cardAbout}>
           <h3>
-            Первинна Медична Допомога за Програмою НСЗУ – Ваш Шлях до Здоров'я!
+            Первинна Медична Допомога за Програмою НСЗУ <br /> Ваш Шлях до
+            Здоров'я!
           </h3>
           <div className={cl.caseAbout}>
             <div className={cl.imgAbout}>

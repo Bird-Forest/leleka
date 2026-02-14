@@ -1,7 +1,7 @@
 import React from "react";
 import cl from "./card.module.scss";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 
 export default function DoctorCard({ item }) {
   return (
@@ -18,9 +18,17 @@ export default function DoctorCard({ item }) {
               <p>{item.description}</p>
             </div>
             <div className={cl.wrapBtn}>
-              <Link href="/rules" className={cl.btnDoc}>
+              {/* <Link href="/rules" className={cl.btnDoc}>
                 Записатися на прийом
-              </Link>
+              </Link> */}
+              <a
+                href="https://medportal.ua/lel/clinics/88"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cl.btnDoc}
+              >
+                Записатися на прийом
+              </a>
             </div>
           </div>
         </div>
