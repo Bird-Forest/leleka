@@ -50,6 +50,12 @@
     @include mx.row-cr-cr(20px);
   }
 }
+
+.linkAgree {
+  @extend %hero-h2;
+  font-size: 16px;
+}
+
 .wrapLinks {
   @include mx.row-cr-cr(20px);
   width: auto;
