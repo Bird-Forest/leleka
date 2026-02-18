@@ -1,10 +1,11 @@
-import UserPayment from "@/components/Payment/UserPayment";
+import Screen from "@/components/Screening/Screen";
 import React from "react";
+import cl from "../page.module.scss";
 
-export default function PageOfPayment() {
+export default function PageOfScreening() {
   return (
-    <>
-      <UserPayment />
-    </>
+    <section className={cl.center}>
+      <Screen />
+    </section>
   );
 }

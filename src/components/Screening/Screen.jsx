@@ -3,7 +3,7 @@ import cl from "./screen.module.scss";
 import Image from "next/image";
 import screen from "../../../public/poster.webp";
 import logo from "../../../public/screen_logo.svg";
-import Link from "next/link";
+import ButtonPay from "./ButtonPay";
 
 export default function Screen() {
   return (
@@ -13,7 +13,10 @@ export default function Screen() {
           <Image src={screen} alt="Скринінг Постер" />
         </div>
         <div className={cl.posterScreen}>
-          <Image src={logo} alt="Скринінг Логотип" />
+          <div className={cl.logoWrap}>
+            <Image src={logo} alt="Скринінг Логотип" />
+          </div>
+
           <div className={cl.btnScreen}>
             <a
               href="https://screening.moz.gov.ua/"
@@ -29,8 +32,8 @@ export default function Screen() {
             >
               Запис на прийом
             </a>
-            <Link href="/payment">Перейти до оплати</Link>
           </div>
+          <ButtonPay />
         </div>
       </div>
     </div>

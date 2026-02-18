@@ -19,17 +19,71 @@
   height: auto;
   background-color: v.$light-text;
   padding: 5px;
-  @include mx.mq("md") {
-    padding: 5px 10px;
-  }
 
   @include mx.mq("lg") {
     @include mx.row-cr-cr(5px);
     height: 100%;
-    padding: 5px;
+  }
+}
+// Banner
+.wrapBanner {
+  position: relative;
+  @include mx.column-fs-cr(20px);
+  min-width: 300px;
+  max-width: 1090px;
+  width: 100%;
+  height: auto;
+  background-color: v.$bg-check;
+  padding: 20px 10px;
+  img {
+    display: block;
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    @include mx.mq("md") {
+      width: 40%;
+    }
+  }
+  @include mx.mq("lg") {
+    @include mx.row-cr-cr(40px);
+    padding: 20px 40px;
   }
 }
 
+.bannerText {
+  @include mx.column-fs-cr(10px);
+  min-width: 300px;
+  max-width: 90%;
+  width: 100%;
+  h4 {
+    @extend %hero-h1;
+    font-weight: 200;
+    color: v.$hover-check;
+    font-size: 28px;
+    text-align: center;
+    @include mx.mq("md") {
+      font-size: 36px;
+    }
+    @include mx.mq("lg") {
+      font-size: 40px;
+    }
+  }
+  .bannerLink {
+    @extend %hero-h2;
+    width: 100%;
+    color: v.$hover-check;
+    font-size: 20px;
+    text-align: right;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      color: v.$accent;
+      transform: scale(1.02);
+    }
+  }
+}
+// Screen
 .photoScreen {
   position: relative;
   @include mx.row-cr-cr(0);
@@ -54,32 +108,42 @@
   height: 100%;
   background-color: v.$bg-check;
   padding: 20px 0px;
-  img {
-    display: block;
-    width: 90%;
+  .logoWrap {
+    position: relative;
+    @include mx.row-cr-cr(0);
+    min-width: 300px;
+    max-width: 545px;
+    width: 100%;
     height: auto;
-    object-fit: cover;
+    img {
+      display: block;
+      width: 90%;
+      height: auto;
+      object-fit: cover;
+    }
   }
+
   @include mx.mq("lg") {
     gap: 40px;
     width: calc(100% - 540px);
+    padding: 46px 0px;
   }
 }
 
 .btnScreen {
+  position: relative;
   @include mx.column-fs-cr(24px);
   width: 60%;
-  bottom: 40px;
-  a {
+  a,
+  button {
     @include mx.row-cr-cr(0);
     min-width: 260px;
     max-width: 520px;
     width: 100%;
+    height: 54px;
     @extend %card-h3;
     color: v.$dark-text;
     font-size: 20px;
-    width: 100%;
-    height: 54px;
     border: none;
     border-radius: 28px;
     background-color: v.$btn-check;
